@@ -1,0 +1,61 @@
+.ba-sellers {
+    padding: 82px 0 28px;
+    &__title {
+        padding-left: 62px;
+    }
+    &__photo {
+        padding-left: 262px;
+    }
+}
+.ba-sellers-monteregie {
+    padding-left: 49px;
+    &__title {
+        font-size: 18px;
+        font-weight: 700;
+        line-height: 1.2;
+        margin: 0;
+    }
+    &__subtitle {
+        color:  #777777;
+        font-size: 15px;
+        font-weight: 400;
+        margin-bottom: 21px;
+    }
+    & p {
+        color:  #888888;
+        font-size: 15px;
+        font-weight: 400;
+        max-width: 339px;
+        line-height: 25px;
+        margin-bottom: 32px;
+    }
+}
+.ba-sellers-info {
+    padding: 41px 0 113px;
+    border-bottom: 1px solid #cdcdcd;
+}
+.ba-sellers-instructions {
+    padding: 78px 262px 85px 48px;
+    &--left {
+        padding: 78px 30px 85px 266px;
+    }
+    &__title {
+        font-size: 30px;
+        font-weight: 300;
+        text-transform: uppercase;
+        max-width: 294px;
+        line-height: 1;
+        margin-bottom: 29px;
+    }
+    .ba-button-sellers {
+        font-size: 16px;
+        font-weight: 700;
+        &:hover {
+            opacity: 0.8;
+        }
+    }
+    & p {
+        letter-spacing: -0.03em;
+        margin-bottom: 26px;
+    }
+}

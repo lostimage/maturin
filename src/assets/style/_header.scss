@@ -1,0 +1,149 @@
+.ba-top-nav {
+    background: $black;
+    display: flex;
+    justify-content: flex-end;
+    color: $white;
+    align-items: center;
+    height: 40px;
+    & li {}
+    & a {
+        color: $white;
+        font-size: 13px;
+        font-weight: 300;
+        & span {
+            border-bottom: 1px solid $black;
+            transition: border-color .3s ease-in;
+        }
+        & svg {
+            fill: currentColor;
+        }
+        &:hover,
+        &:active,
+        &.active {
+            color: $white;
+            & span {
+                border-bottom: 1px solid $white;
+            }
+        }
+    }
+    .dropdown.menu a {
+        padding: 0.7rem 0.83rem;
+    }
+}
+
+.ba-header {
+    display: flex;
+    align-items: center;
+    padding: 13px 0;
+    &__search {
+        flex-grow: 1;
+        position: relative;
+        &:before {
+            position: absolute;
+            content: '';
+            height: 24px;
+            width: 24px;
+            background: url('../img/search.svg') no-repeat;
+            top: 50%;
+            right: 12px;
+            transform: translateY(-50%);
+        }
+        & input {
+            width: 100%;
+            padding-left: 25px;
+            line-height: 44px;
+            margin: 0;
+            margin-top: 1px;
+        }
+    }
+    &__cart {
+        margin-left: 56px;
+        margin-right: 46px;
+        position: relative;
+        z-index: 1;
+        & img {
+            opacity: 0.6;
+            transition: opacity .3s ease-in;
+        }
+        &:hover {
+            img {
+                opacity: 1;
+            }
+        }
+    }
+    &__list {
+        margin-left: 99px;
+        opacity: 0.6;
+        transition: opacity .3s ease-in;
+        &:hover {
+            opacity: 1;
+        }
+    }
+    .ba-cart-quantity {
+        height: 18px;
+        width: 18px;
+        position: absolute;
+        z-index: 2;
+        font-size: 10px;
+        color: $white;
+        background-color: $primary-color;
+        top: -3px;
+        right: -7px;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+}
+
+.ba-logo {
+    padding: 0 62px 0 83px;
+}
+
+.ba-header-nav {
+    position: relative;
+    padding: 0;
+    &__list {
+        display: flex;
+        list-style: none;
+        justify-content: space-between;
+        margin: 0;
+        padding: 3px 0 0 55px;
+        & li {
+            transition: background-color .4s ease-in;
+            padding-left: 27px;
+        }
+        & a {
+            display: block;
+            font-size: 13px;
+            text-transform: uppercase;
+            font-weight: 400;
+            color: $black;
+            border-bottom: 1px solid transparent;
+            transition: color .4s ease-in;
+            padding: 10px 23px 20px 18px;
+            &.is-active {
+              span {
+                  border-bottom: 2px solid #000;
+              }
+            }
+            &:hover {
+                background-color: $black;
+                color: $white;
+            }
+        }
+    }
+    .ba-soldes {
+        color: $primary-color;
+        padding-right: 14px;
+    }
+}
+
+
+#menu-drinks-dropdown-button {
+    &:hover {
+        .ba-menu {
+            display: block;
+        }
+    }
+}

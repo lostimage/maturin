@@ -1,0 +1,106 @@
+@import url('https://fonts.googleapis.com/css?family=Nunito+Sans:300,400,400i,600,700,800');
+svg{
+	display: inline-block;
+	vertical-align: middle;
+	@include ba-transition('fill, stroke');
+}
+a,
+[type="submit"],
+[type="button"],
+button{
+	@include ba-transition;
+}
+.ba-button { 
+	display: inline-block;
+	background: $primary-color;
+	font-size: 18px;
+	font-weight: 600;
+	line-height: 50px;
+	color:$white;
+	&:hover {
+		background-color: #d6582a;
+		color:$white;
+	}
+	&--magaziner {
+		max-width: 200px;
+		display: block;
+		text-align: center;
+	}
+	&--view {
+		color:$black;
+		background: #fff;
+		font-size: 13px;
+		font-weight: 700;
+		line-height: 25px;
+		position: absolute;
+		text-transform: uppercase;
+		left: 10px;
+    	top: 20px;
+		padding: 0 12px 0 10px;
+		&:hover {
+			background: $black;
+			color: $white;
+		}
+	}
+	&--add-to-cart {
+		position: absolute;
+		bottom: 24px;
+		left: 50%;
+		transform: translateX(-50%);
+		text-align: center;
+		font-size: 15px;
+		font-weight: 700;
+		width: 190px;
+	}
+	&--plus {
+		padding: 0 45px;
+	}
+	&--stories {
+		padding:0 16px;
+		position: relative;
+		z-index: 2;
+		font-size: 15px;
+font-weight: 600;
+
+	}
+	&--submit {
+		width: 100%;
+		font-size: 18px;
+		font-weight: 600;
+	}
+	
+}
+.ba-add-to-list {
+	position: absolute;
+	width: 27px;
+	height: 24px;
+	right: 14px;
+	top: 15px;
+}
+ 
+	.ba-title-with-line {
+		font-size: 30px;
+		font-weight: 700;
+		position: relative;
+	   text-align: center;
+	   text-transform:uppercase;
+	   letter-spacing: 0.01em;
+	   & span {
+		 position: relative;
+		   z-index: 2;
+		   background: #fff;
+		   padding:0 20px 0;
+	   }
+		&:after {
+			content:'';
+			position: absolute;
+			width: 100%;
+			top: 50%;
+			left: 0;
+			border-bottom: 1px solid #cdcdcd;
+		   z-index: 1;
+		}
+	}
+.ba-hide {
+	display: none;
+}

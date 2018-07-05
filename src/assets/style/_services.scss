@@ -1,0 +1,35 @@
+.ba-services {
+    text-align:center;
+    padding: 38px 28px 40px 0;
+   
+    &__title {
+        font-size: 18px;
+        font-weight: 700;
+        text-transform: uppercase;
+        letter-spacing: 0.01em;
+        margin-top: 11px;
+    }
+    & p {
+        color:  $dark-gray;
+        font-size: 14.97px;
+        font-weight: 300;
+        padding: 6px 51px 1px 55px;
+        line-height: 25px;
+    }
+    &--center {
+        padding: 38px 0 40px 0;
+        & p {
+            padding-right: 62px;
+            padding-left: 67px;
+        }
+    }
+    &--right {
+        padding: 38px 0 40px 48px;
+        .ba-services__title {
+            margin-top: 14px;
+        }
+        & p {
+            padding: 6px 41px 1px 49px;
+        }
+    }
+}

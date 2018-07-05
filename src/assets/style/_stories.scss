@@ -1,0 +1,135 @@
+.ba-stories {
+    &__title {
+        padding-left: 52px;
+        margin-bottom: 30px;
+    }
+}
+.ba-stories-image {
+    position: relative;
+   height: 100%;
+   padding-left: 157px;
+    &:after {
+        position: absolute;
+        content:'';
+        top: 0;
+        bottom: 0;
+        right: 0;
+        width: 100vw;
+        z-index: 1;
+        background-color:  rgba(205, 205, 205, 0.3);
+    }
+    & img {
+        position: relative;
+        z-index: 2;
+    }
+}
+.ba-stories-info {
+    background: #000;
+    color:$white;
+    padding:68px 287px 88px 62px;
+    height: 100%;
+    position: relative;
+    z-index: 2;
+    &:after {
+        position: absolute;
+        content:'';
+        top: 0;
+        bottom: 0;
+        left: 0;
+        width: 100vw;
+        z-index: 0;
+        background-color: #000;
+    }
+    &__title{
+        position: relative;
+        font-size: 24px;
+        font-weight: 700;
+        z-index: 2;
+        margin-bottom: 0px;
+        line-height: 30px;
+    }
+    &__subtitle {
+        font-size: 15px;
+        font-weight: 700;
+        position: relative;
+        z-index: 2;
+        margin-bottom: 16px;
+    }
+    & p {
+        font-size: 15px;
+        font-style: italic;
+        line-height: 25px;
+        position: relative;
+        z-index: 2;
+    }
+    &__author {
+        display: flex;
+        align-items: center;
+        margin-top: 35px;
+        margin-bottom: 60px;
+        position: relative;
+        z-index: 2;
+        & span {
+            font-size: 13px;
+font-weight: 700;
+padding-left: 13px;
+        }
+    }
+}
+.ba-author-image {
+    border-radius: 50%;
+    overflow: hidden;
+}
+.ba-stories-instructions {
+   padding:100px 0 110px ;
+   text-align: center;
+  
+  
+   border-bottom: 1px solid #cdcdcd;
+   &__title {
+    font-size: 30px;
+    font-weight: 600;
+    text-transform: uppercase;
+    margin-bottom: 33px;
+   }
+   & p {
+    font-size: 15px;
+    font-weight: 300;
+    max-width: 704px;
+    margin: 0 auto 25px;
+   }
+}
+
+.ba-subscribe{
+    padding: 84px 0 114px;
+    text-align:center;
+    border-bottom: 1px solid #cdcdcd;
+    position: relative;
+    &__title {
+        font-size: 30px;
+        font-weight: 300;
+        text-transform:uppercase;
+    }
+    
+}
+.ba-subscribe-form {
+    margin: 27px auto 0;
+    max-width: 342px;
+    
+    & input {
+        background-color:  #e0dfde;
+        line-height: 50px;
+        border: none;
+        color: $black;
+        text-align:center;
+        width: 100%;
+        font-size: 18px;
+font-weight: 600;
+margin-bottom: 15px;
+    }
+}
+.ba-message-button {
+    position: absolute;
+    bottom: 27px;
+    right: 40px;
+}

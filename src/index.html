@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>Foundation 101 Template</title>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="description" content="">
+	<link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+	<link rel="icon" type="image/png" href="favicon.png">
+	<link href="assets/css/app.css" rel="stylesheet">
+</head>
+<body>
+	<div class="off-canvas-wrapper">
+		<div class="off-canvas position-right" id="offCanvas" data-off-canvas>
+			//=include templates/mob-nav.html				
+		</div>
+		<!-- ./off-canvas -->
+		<div class="off-canvas-content" data-off-canvas-content>
+ 
+			//=include templates/header.html
+
+			<main>
+			//=include templates/intro.html
+			//=include templates/services.html
+			//=include templates/products.html
+			//=include templates/categories.html
+			//=include templates/sellers.html
+			//=include templates/stories.html
+			</main>
+	
+			//=include templates/footer.html
+		
+		</div>
+		<!-- ./off-canvas-content -->
+	</div>
+	<!-- ./off-canvas-wrapper -->
+	//=include templates/scripts.html
+</body>
+</html>

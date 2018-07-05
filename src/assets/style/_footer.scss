@@ -1,0 +1,101 @@
+.ba-footer {
+    padding: 28px 0 184px 28px;
+    &__title {
+        font-size: 15px;
+        font-weight: 700;
+    }
+    &__list {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        & a {
+            color: #777777;
+            font-size: 15px;
+            font-weight: 400;
+            border-bottom: 1px solid transparent;
+            transition: border-color .3s ease-in;
+            &:hover,
+            &.active {
+                border-bottom: 1px solid #777777;
+            }
+        }
+    }
+    &__buy {
+        padding-right: 238px;
+    }
+    &__sell {
+        padding-right: 244px;
+    }
+    &__about {
+        padding-right: 233px;
+    }
+    &__links {
+        padding-right: 140px;
+    }
+    &__social {
+        display: flex;
+        margin-left: -10px;
+        & svg {
+            height: 20px;
+            width: 30px;
+            fill: #777;
+        }
+        & a {
+            display: flex;
+            justify-content: flex-start;
+            &:hover {
+                svg {
+                    fill: $black;
+                }
+            }
+        }
+    }
+}
+
+.footer-menu {
+    border: 1px solid #cdcdcd;
+    & a {
+        color: $black;
+    }
+    & li {
+        background: $white;
+        transition: color 0;
+        &:hover {
+            a {
+                span {
+                    color: $black;
+                }
+            }
+        }
+    }
+    & svg {
+        fill:#cdcdcd;
+    }
+}
+.ba-copyright-info {
+    display: flex;
+    width: 100%;
+    margin-top: 55px;
+    &__links {
+        display: flex;
+        list-style:none;
+        flex-grow: 1;
+        margin: 0;
+        justify-content: center;
+        & li {
+            padding-left: 50px;
+        }
+        
+        & a {
+            color:#777777;
+            font-size: 15px;
+            font-weight: 400;
+        }
+    }
+    & p {
+        color:  #999999;
+font-size: 13px;
+font-weight: 300;
+margin: 0;
+    }
+}
